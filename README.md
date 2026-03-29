@@ -5,7 +5,9 @@
 This project analyzes monthly sales performance to identify growth drivers, risks, and business opportunities.
 
 **Dashboard Preview**
-<img width="1314" height="927" alt="image" src="https://github.com/user-attachments/assets/06982f7c-672a-4d9e-ad04-3b0cfd515914" />
+<img width="1319" height="932" alt="image" src="https://github.com/user-attachments/assets/546135ce-b9a6-4c8b-b049-f41cbe948f53" />
+
+
 
 Built using:
 SQL (data extraction & transformation)
@@ -14,24 +16,23 @@ Power BI (dashboard)
 
 **Key KPIs**
 
-Revenue (Current vs Previous Month)
 MoM Growth %
+Revenue (Current vs Previous Month)
 Average Order Value (AOV)
-Total Orders
+MoM Order Growth %
+Total Orders (Current vs Previous Month)
 
 **Key Insights**
 
-Revenue Growth Driven by Higher Spending
-Revenue grew +3.33% ($636K)
-Orders slightly decreased (857 → 845)
-AOV increased ($718 → $753)
-Growth is driven by higher spend per order, not more demand
+Revenue grew +3.33% driven by a higher spending amount per order.
+Average Order Value increased by +4.80% 
+Amount of orders slightly decreased for a -1.40% decrease, which tells us that growth is driven by higher spend per order, not more demand
 
 **Product Mix Shift**
 
-Electronics & Furniture dominate revenue
-High-value items (e.g., desks) drive performance
-These are low-frequency purchases, impacting repeat orders
+Electronics & Accessories dominate revenue
+Laptop Stand drives performance
+
 
 **Risk: Declining Order Volume**
 
