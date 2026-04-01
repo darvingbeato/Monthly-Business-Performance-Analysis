@@ -35,11 +35,7 @@ To further investigate the AOV increase, a basket size analysis was performed.
 
 <img width="615" height="93" alt="image" src="https://github.com/user-attachments/assets/c0d0dab3-4252-40b2-adb7-29137dca3e12" />
 
-Large baskets (4+ items) grew +14.4%, while smaller baskets declined ~10–12%, confirming that AOV growth was driven by a shift toward higher-volume orders.
-
-
-**Conclusion:**
-AOV growth (**+4.8%**) was driven by customers purchasing more items per order, not by pricing changes or product mix.
+Large baskets (4+ items) grew +14.44%, while smaller baskets declined ~10–12%, confirming that AOV growth was driven by customers purchasing more items per order.
 
 
 **Business Risk: Declining Order Volume**
