@@ -9,7 +9,7 @@ USE WideWorldImporters;
 
 
 /*=====================================================
-  1. Are there nulls ?
+Are there nulls ?
 =====================================================*/
 
 SELECT
@@ -26,7 +26,7 @@ FROM portfolio_dataset1;
 
 
 /*=====================================================
-    2. Data Cleaning: Remove Duplicate Records
+Data Cleaning: Remove Duplicate Records
 =====================================================*/
 SELECT COUNT(*) AS TotalRows FROM portfolio_dataset1;
 
@@ -44,7 +44,7 @@ SELECT COUNT(*) AS TotalRowsAfterCleanup
 FROM portfolio_dataset1;
 
 /*=====================================================
-  3. Total Revenue
+Total Revenue
 =====================================================*/
 SELECT 
    ROUND(SUM(revenue), 2) AS Total_Revenue
@@ -53,7 +53,7 @@ FROM portfolio_dataset1;
 
 
 /*=====================================================
-  4. Monthly Revenue Trend & Month-over-Month Growth
+Monthly Revenue Trend & Month-over-Month Growth
 =====================================================*/
 
 WITH MonthlyRevenue AS (
@@ -89,7 +89,7 @@ ORDER BY MonthStart;
 
 
 /*=====================================================
-  5. Revenue by Product Category
+Revenue by Product Category
 =====================================================*/
 SELECT
     product_category
@@ -101,7 +101,7 @@ ORDER BY Category_Revenue DESC;
 
 
 /*=====================================================
-  6. Top 10 Customers by Revenue
+Top 10 Customers by Revenue
 =====================================================*/
 SELECT TOP 10
     customer_id
@@ -115,7 +115,7 @@ ORDER BY SUM(revenue) DESC;
 
 
 /*=====================================================
-  7. Top 10 Products by Revenue
+Top 10 Products by Revenue
 =====================================================*/
 SELECT TOP 10
     product_id
@@ -129,7 +129,7 @@ ORDER BY SUM(revenue) DESC;
 
 
 /*=====================================================
-  8. Revenue by Region
+Revenue by Region
 =====================================================*/
 SELECT
     region
@@ -139,7 +139,7 @@ GROUP BY region
 ORDER BY Region_Revenue DESC;
 
 /*=====================================================
-  9. Ranking Months by Revenue Performance
+Ranking Months by Revenue Performance
 =====================================================*/
 WITH MonthlyRevenue AS (
     SELECT
@@ -158,7 +158,7 @@ WITH MonthlyRevenue AS (
     ORDER BY mr.MonthlyRevenue DESC;
 
 /*=====================================================
- 10. Top 3 product per category.
+Top 3 product per category.
 =====================================================*/
 WITH ProductRevenue AS (
     SELECT
@@ -188,7 +188,7 @@ WITH ProductRevenue AS (
     ORDER BY pr.product_category, pr.Row_Rank;
 
 /*=====================================================
- 11. Running Revenue Total by Date
+Running Revenue Total by Date
 =====================================================*/
 
 WITH DailyRevenue AS (
@@ -207,7 +207,7 @@ FROM DailyRevenue
 ORDER BY order_date;
 
 /*=====================================================
-12.  Top 3 Customers Per Region
+Top 5 Customers Per Region
 =====================================================*/
 
 WITH CustomerRevenue AS (
@@ -231,5 +231,36 @@ FROM (
         ) AS Rank_In_Region
     FROM CustomerRevenue
 ) ranked
-WHERE Rank_In_Region <= 3
+WHERE Rank_In_Region <= 5
 ORDER BY region, Rank_In_Region;
+
+/*=====================================================
+Basket Size
+=====================================================*/
+WITH order_level AS (
+    SELECT 
+        order_id
+        ,DATEFROMPARTS(YEAR(order_date), MONTH(order_date), 1) AS order_month
+        ,SUM(quantity) AS units_per_order
+        ,sum(revenue) as order_revenue
+    FROM portfolio_dataset1
+    GROUP BY order_id, DATEFROMPARTS(YEAR(order_date), MONTH(order_date), 1)
+)
+SELECT 
+    order_month
+    ,CASE 
+        WHEN units_per_order = 1 THEN '1 item'
+        WHEN units_per_order BETWEEN 2 AND 3 THEN '2-3 items'
+        ELSE '4+ items'
+    END AS basket_size
+    ,COUNT(*) AS orders
+    ,FORMAT(sum(order_revenue),'C') as total_order_revenue
+FROM order_level
+WHERE order_month in ('2025-11-01','2025-12-01')
+GROUP BY order_month
+        ,CASE 
+        WHEN units_per_order = 1 THEN '1 item'
+        WHEN units_per_order BETWEEN 2 AND 3 THEN '2-3 items'
+        ELSE '4+ items'
+    END
+ORDER BY order_month, basket_size;
