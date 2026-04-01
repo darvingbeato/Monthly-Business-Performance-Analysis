@@ -23,10 +23,7 @@ Monthly Total Orders (Current vs Previous Month)
 
 **Key Insights**
 
-Growth Driven by Higher Spending (Not Demand)
-Revenue increased by **+3.33% MoM**
-AOV increased by **+4.8% MoM**
-Order count decreased by **-1.4% MoM**
+Growth Driven by Higher Spending (Not Demand), Revenue increased by **+3.33% MoM**, AOV increased by **+4.8% MoM**, Order count decreased by **-1.4% MoM**
 
 This indicates that growth is not driven by more customers or orders, but by higher value per transaction.
 
@@ -43,11 +40,7 @@ AOV growth (**+4.8%**) was driven by customers purchasing more items per order, 
 
 **Business Risk: Declining Order Volume**
 
-Fewer orders may signal:
-Lower customer engagement
-Reduced purchase frequency
-Potential retention issues/n \n
-Growth may not be sustainable long-term
+Fewer orders may signal: Lower customer engagement, Reduced purchase frequency, Potential retention issues, Growth may not be sustainable long-term
 
 **Recommendations**
 
