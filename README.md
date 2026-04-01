@@ -5,7 +5,7 @@ This project analyzes monthly sales performance to identify growth drivers, risk
 The analysis focuses on understanding whether growth is driven by:
 Increased demand (more orders), Higher customer spending (AOV) or Changes in purchasing behavior.
 
-<img width="1318" height="933" alt="image" src="https://github.com/user-attachments/assets/b0f7e91b-a89b-4727-8c51-9c1e84a92f6f" />
+<img width="1317" height="930" alt="image" src="https://github.com/user-attachments/assets/9a76c589-facb-495b-8318-5815a81abb29" />
 
 Built using:
 SQL (data extraction & transformation)
