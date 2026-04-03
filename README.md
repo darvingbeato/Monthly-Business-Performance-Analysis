@@ -77,7 +77,7 @@ This suggests that growth may not be sustainable long-term
 **Balance Growth Strategy:** Avoid over-reliance on AOV-driven growth ==> Ensure both Order volume (demand) and Order value (AOV) are growing sustainably.
 
 
-**Next Step ** 
+**Next Step**
 
 Launch re-engagement campaigns targeting inactive or low-frequency customers
 
