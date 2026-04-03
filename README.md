@@ -2,6 +2,7 @@
 
 **Executive Summary**
 
+
 This analysis identifies the true growth driver, uncovers the root cause, and highlights risks to long-term sustainability.
 
 Revenue increased **+3.33% MoM**, but this growth was not driven by demand.
@@ -12,7 +13,9 @@ Extracted and transformed data using SQL and developed an interactive dashboard 
 <img width="1317" height="930" alt="image" src="https://github.com/user-attachments/assets/9a76c589-facb-495b-8318-5815a81abb29" />
 
 
-** Methodology**
+
+**Methodology**
+
 
 1. Extracted and transformed data using SQL
 2. Built structured pipelines using:
@@ -41,16 +44,19 @@ Extracted and transformed data using SQL and developed an interactive dashboard 
 
 **Key Insights**
 
+
 Growth Driven by Higher Spending (Not Demand), Revenue increased by **+3.33% MoM**, AOV increased by **+4.8% MoM**, Order count decreased by **-1.4% MoM**
 This indicates that growth is not driven by more customers or orders, but by higher value per transaction.
 
 
 **Basket Size Analysis (Root Cause)**
 
+
 To further investigate the AOV increase, a basket size analysis was performed.
 
 
 **Findings:**
+
 
 <img width="615" height="93" alt="image" src="https://github.com/user-attachments/assets/c0d0dab3-4252-40b2-adb7-29137dca3e12" />
 
@@ -59,6 +65,7 @@ Large baskets (4+ items) grew +14.44%, while smaller baskets declined ~10–12%,
 
 
 **Business Risk**
+
 
 Despite positive revenue growth, there is a potential risk:
   1. Declining order volume may indicate:
@@ -75,6 +82,7 @@ This suggests that growth may not be sustainable long-term
 
 **Recommendations**
 
+
 **Increase Order Volume:** Launch re-engagement campaigns targeting inactive or low-frequency customers.
 
 **Maintain High AOV:** Continue promoting Product bundles, Cross-sell / upsell strategies.
@@ -86,10 +94,12 @@ This suggests that growth may not be sustainable long-term
 
 **Next Step**
 
+
 Launch re-engagement campaigns targeting inactive or low-frequency customers
 
 
 **Skills Demonstrated**
+
 
 1. Built structured SQL pipelines using CTEs and aggregations
 2. Designed and calculated business KPIs (Revenue, AOV, Orders, MoM Growth)
