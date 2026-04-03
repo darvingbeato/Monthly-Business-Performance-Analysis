@@ -55,9 +55,13 @@ Large baskets (4+ items) grew +14.44%, while smaller baskets declined ~10–12%,
 
 Despite positive revenue growth, there is a potential risk:
   1. Declining order volume may indicate:
+     
      1.1 Lower customer engagement
+     
      1.2 Reduced purchase frequency
+     
      1.3 Early signs of retention issues
+     
     
 This suggests that growth may not be sustainable long-term
 
