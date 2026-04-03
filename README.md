@@ -15,11 +15,15 @@ This analysis identifies the true growth driver, uncovers the root cause, and hi
 3. Designed key business metrics:
    
      3.1 Revenue
+   
      3.2 Orders
+   
      3.3 AOV
+   
      3.4 Month-over-Month (MoM) growth
    
-4. Developed an interactive dashboard in Power BI for visualization
+   
+5. Developed an interactive dashboard in Power BI for visualization
 
 
 **Key Metrics**
@@ -51,10 +55,9 @@ Large baskets (4+ items) grew +14.44%, while smaller baskets declined ~10–12%,
 
 Despite positive revenue growth, there is a potential risk:
   1. Declining order volume may indicate:
-     
-    1.1 Lower customer engagement
-    1.2 Reduced purchase frequency
-    1.3 Early signs of retention issues
+     1.1 Lower customer engagement
+     1.2 Reduced purchase frequency
+     1.3 Early signs of retention issues
     
 This suggests that growth may not be sustainable long-term
 
