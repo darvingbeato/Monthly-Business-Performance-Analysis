@@ -12,16 +12,12 @@ This analysis identifies the true growth driver, uncovers the root cause, and hi
 ** Methodology**
 1. Extracted and transformed data using SQL
 2. Built structured pipelines using:
-
-   2.1 CTEs (Common Table Expressions)
-  2.2 Aggregations and KPI calculations
-
-4. Designed key business metrics:
-  3.1 Revenue
-  3.2 Orders
-  3.3 AOV
-  3.4 Month-over-Month (MoM) growth
-5. Developed an interactive dashboard in Power BI for visualization
+3. Designed key business metrics:
+     3.1 Revenue
+     3.2 Orders
+     3.3 AOV
+     3.4 Month-over-Month (MoM) growth
+4. Developed an interactive dashboard in Power BI for visualization
 
 
 **Key Metrics**
