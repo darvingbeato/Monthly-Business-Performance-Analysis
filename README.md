@@ -10,7 +10,7 @@ Instead, it was driven by an increase in Average Order Value (AOV), while total 
 Extracted and transformed data using SQL and developed an interactive dashboard in Power BI. I recommended the team to launch re-engagement campaigns targeting inactive or low-frequency customers to Increase Order Volume. Continue promoting Product bundles, Cross-sell / upsell strategies to maintain High AOV.
 
 
-![Dashboard](<img width="1317" height="930" alt="image" src="https://github.com/user-attachments/assets/9a76c589-facb-495b-8318-5815a81abb29" />)
+![Dashboard](https://github.com/user-attachments/assets/9a76c589-facb-495b-8318-5815a81abb29)
 
 
 
